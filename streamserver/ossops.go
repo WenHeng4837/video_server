@@ -11,8 +11,8 @@ package main
 //var SK string
 //
 //func init(){
-//	AK="LTAI4FztaeQaYLoxJbFUcK4H"
-//	SK="jubKSKQabSTcWo9ZvdmjRPXE9UaY4g"
+//	AK=""//你的ak
+//	SK=""//你的sk
 //	EP=config.GetOssAddr()
 //}
 ////上传
