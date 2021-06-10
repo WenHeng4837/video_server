@@ -63,7 +63,7 @@ forloop:
 	for {
 		select {
 		case vid := <-dc:
-			//为了并发考虑，这里每一个都起个新的go continuous
+			//为了并发考虑，这里每一个都起个新的goroutine
 			//z这里不直接用vid而使用id是因为你使用go func是一个闭包，当你直接使用vid是会拿到顺时状态，而不会将状态保存，只有你将参数传进来才会保存状态作为一个完整close执行
 			go func(id interface{}) {
 				//id要转实际类型，先删实际文件
