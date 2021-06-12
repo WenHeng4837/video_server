@@ -6,7 +6,7 @@ import (
 	"video_server/api/session"
 )
 
-//继承*httprouter.Router，他也是继承了http.Handler
+//继承了http.Handler
 type middleWareHandler struct {
 	r *httprouter.Router
 }
