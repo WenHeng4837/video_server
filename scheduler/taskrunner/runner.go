@@ -16,6 +16,7 @@ type Runner struct {
 func NewRunner(size int, longlived bool, d fn, e fn) *Runner {
 	return &Runner{
 		//非阻塞式
+		//缓冲通道，没有要求强同步
 		Controller: make(chan string, 1),
 		Error:      make(chan string, 1),
 		Data:       make(chan interface{}, size),
