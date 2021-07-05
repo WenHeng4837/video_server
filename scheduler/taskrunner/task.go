@@ -11,7 +11,7 @@ import (
 
 //流程：api->video_id->mysql
 //dispatcher->mysql->video_id->datachannel
-//executor->datachannel->video_>delete videos
+//executor->datachannel->video_id>delete videos
 //真正删除视频
 func deleteVideo(vid string) error {
 	err := os.Remove(VIDEO_PATH + vid)

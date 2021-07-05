@@ -5,7 +5,7 @@ import (
 	"log"
 )
 
-//往记录表里写入激将沈河要删除的视频
+//往记录表里写入激将要删除的视频
 func AddVideoDeletionRecord(vid string) error {
 	stmtIns, err := dbConn.Prepare("INSERT INTO video_del_rec (video_id) VALUES(?)")
 	if err != nil {

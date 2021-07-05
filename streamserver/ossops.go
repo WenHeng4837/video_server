@@ -11,6 +11,7 @@ package main
 //var SK string
 //
 //func init(){
+//
 //	AK=""//你的ak
 //	SK=""//你的sk
 //	EP=config.GetOssAddr()
